@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="35" viewBox="0 0 59 35">
+  <g id="icon_book" transform="translate(-335.618 46.44)">
+    <rect id="Rectangle_485" data-name="Rectangle 485" width="59" height="35" rx="17.5" transform="translate(335.618 -46.44)" fill="#fef0c5"/>
+    <path id="Icon_awesome-book-open" data-name="Icon awesome-book-open" d="M22.011,2.252c-2.225.126-6.646.586-9.376,2.257a.624.624,0,0,0-.3.535V19.814a.642.642,0,0,0,.945.548c2.808-1.413,6.87-1.8,8.878-1.9a1.266,1.266,0,0,0,1.219-1.245V3.5a1.273,1.273,0,0,0-1.371-1.246ZM10.746,4.509C8.017,2.838,3.6,2.379,1.371,2.252A1.273,1.273,0,0,0,0,3.5V17.213a1.266,1.266,0,0,0,1.219,1.245c2.009.106,6.072.492,8.881,1.906a.64.64,0,0,0,.942-.546V5.036A.611.611,0,0,0,10.746,4.509Z" transform="translate(353.427 -40.283)" fill="#fec302"/>
+  </g>
+</svg>

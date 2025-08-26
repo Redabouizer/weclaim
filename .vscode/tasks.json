@@ -1,0 +1,66 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start React Development Server",
+			"type": "shell",
+			"command": "npm start",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Install weclaim deps",
+			"type": "shell",
+			"command": "npm install",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$eslint-stylish"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Start React Development Server",
+			"type": "shell",
+			"command": "npm start",
+			"args": [],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Install Node via Corepack",
+			"type": "shell",
+			"command": "bash -lc \"set -e; if ! command -v node >/dev/null 2>&1; then if command -v apt >/dev/null 2>&1; then sudo apt update -y && sudo apt install -y nodejs npm; else echo 'Please install Node.js in your WSL distro (Ubuntu recommended).'; exit 1; fi; fi; node -v; npm -v\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Copy Legacy Web Files to Weclaim",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"robocopy",
+				"\"C:\\Downloaded Web Sites\\yunes\"",
+				"\"C:\\Downloaded Web Sites\\yunes\\weclaim\\legacy-src\"",
+				"*.htm",
+				"*.html",
+				"*.css",
+				"*.js",
+				"/S",
+				"/R:0",
+				"/W:0",
+				"/XD",
+				"\"C:\\Downloaded Web Sites\\yunes\\node_modules\"",
+				"\"C:\\Downloaded Web Sites\\yunes\\.git\"",
+				"\"C:\\Downloaded Web Sites\\yunes\\.vscode\"",
+				"\"C:\\Downloaded Web Sites\\yunes\\weclaim\\legacy-src\"",
+				"\"C:\\Downloaded Web Sites\\yunes\\wp-content\\cache\""
+			]
+		}
+	]
+}
